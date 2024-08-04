@@ -84,9 +84,9 @@ deploy_vless() {
     output_yi_xiu
     echo -e "端口号: ${GREEN}${port}${NC}"
     echo -e "UUID: ${GREEN}${uuid}${NC}"
-    echo -e "域名: ${GREEN}aniange.cloudns.ch${NC}"
+    echo -e "域名: ${GREEN}anianges7.cloudns.ch${NC}"
     echo -e "vless进程维护定时任务脚本: ${GREEN}cd ~/domains/serv00-script/vless && ./check_vless.sh${NC}"
-    echo -e "VLESS节点信息: ${GREEN}vless://${uuid}@aniange.cloudns.ch:${port}?flow=&security=none&encryption=none&type=ws&host=aniange.cloudns.ch&path=/&sni=&fp=&pbk=&sid=#aniange.cloudns.ch${NC}"
+    echo -e "VLESS节点信息: ${GREEN}vless://${uuid}@anianges7.cloudns.ch:${port}?flow=&security=none&encryption=none&type=ws&host=anianges7.cloudns.ch&path=/&sni=&fp=&pbk=&sid=#anianges7.cloudns.ch${NC}"
 }
 
 # 启动pm2 vless进程
@@ -158,8 +158,8 @@ main() {
             port=$(jq -r '.port' config.json)
             echo -e "UUID: ${uuid}"
             echo -e "Port: ${port}"
-            echo -e "域名: aniange.cloudns.ch"
-            echo -e "VLESS节点信息: vless://${uuid}@aniange.cloudns.ch:${port}?flow=&security=none&encryption=none&type=ws&host=aniange.cloudns.ch&path=/&sni=&fp=&pbk=&sid=#aniange.cloudns.ch"
+            echo -e "域名: anianges7.cloudns.ch"
+            echo -e "VLESS节点信息: vless://${uuid}@anianges7.cloudns.ch:${port}?flow=&security=none&encryption=none&type=ws&host=anianges7.cloudns.ch&path=/&sni=&fp=&pbk=&sid=#anianges7.cloudns.ch"
 
         else
             echo -e "config.json 文件不存在或格式错误。"
